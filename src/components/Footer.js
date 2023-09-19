@@ -84,7 +84,7 @@ const Footer = () => {
                         </li>
 
                         <li>
-                            <a href="#" className="footer-link">Online ClassNamees</a>
+                            <a href="#" className="footer-link">Online Class</a>
                         </li>
 
                     </ul>
@@ -127,7 +127,7 @@ const Footer = () => {
                 <div className="container">
 
                     <p className="copyright">
-                        © 2022 Futras Made With
+                        © 2021 Fit Made With
                         <Heart
                             color={'var(--orange-web)'}
                             height="18px"
