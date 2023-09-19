@@ -1,0 +1,120 @@
+.footer-top {
+    background-color: var(--blue-green-color-wheel);
+    color: var(--white);
+}
+
+.footer-top .container {
+    display: grid;
+    gap: 50px;
+}
+
+.footer-list-title {
+    color: var(--orange-web);
+    font-family: var(--ff-playfair);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-600);
+    margin-block-end: 28px;
+}
+
+.footer-form {
+    margin-block-start: 50px;
+}
+
+.footer-top .email-field {
+    background-color: var(--white);
+    color: var(--black-chocolate);
+    padding: 11px 30px;
+    border-radius: var(--radius-10);
+    margin-block-end: 20px;
+}
+
+.footer-top .email-field::placeholder {
+    color: inherit;
+}
+
+.footer-top .btn-secondary {
+    border-radius: var(--radius-10);
+}
+
+.footer-top .btn-secondary:is(:hover, :focus) {
+    background-color: var(--white);
+    color: var(--onyx);
+}
+
+.footer-link,
+.address {
+    font-size: var(--fs-6);
+    margin-block-start: 12px;
+    transition: var(--transition-1);
+}
+
+.address-title {
+    margin-block: 12px;
+}
+
+.footer-link:is(:hover, :focus),
+.footer-bottom-link:is(:hover, :focus) {
+    color: var(--orange-web);
+}
+
+.footer-bottom {
+    background-color: var(--msu-green);
+    color: var(--white);
+    font-size: var(--fs-5);
+    text-align: center;
+    padding-block: 25px;
+}
+
+.copyright {
+    margin-block-end: 25px;
+}
+
+.copyright :is(.copyright-link, ion-icon) {
+    display: inline-block;
+    color: var(--orange-web);
+}
+
+.copyright .ion-icon {
+    font-size: 18px;
+    margin-block-end: -4px;
+}
+
+.copyright-link{
+    padding-inline-start: 5px;
+}
+
+.copyright-link:is(:hover, :focus) {
+    text-decoration: underline;
+}
+
+.footer-bottom-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.footer-bottom-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom-item:not(:last-child)::after {
+    content: "-";
+    margin-inline: 10px;
+}
+
+.footer-bottom-link {
+    transition: var(--transition-1);
+}
+
+@media screen and (min-width: 769px){
+    .copyright{
+        display: flex;
+    }
+
+    .ion-icon{
+        padding-inline: 5px !important;
+    }
+}

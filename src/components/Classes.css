@@ -1,0 +1,33 @@
+.course-card .card-banner {
+    margin-block-end: 30px;
+}
+
+.course-card .card-content {
+    position: relative;
+    padding: 20px;
+    padding-block-end: 15px;
+}
+
+.course-card .card-price {
+    background-color: var(--blue-green-color-wheel);
+    color: var(--white);
+    font-weight: var(--fw-700);
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    margin-inline: auto;
+    margin-block-start: -80px;
+    margin-block-end: 20px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}
+
+.course-card .card-title {
+    margin-block: 10px 20px;
+    transition: var(--transition-1);
+}
+
+.course-card .card-title:is(:hover, :focus) {
+    color: var(--orange-web);
+}

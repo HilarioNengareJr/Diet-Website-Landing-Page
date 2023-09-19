@@ -1,0 +1,82 @@
+.service-card .card-icon {
+  position: relative;
+  background-color: var(--cultured);
+  max-width: max-content;
+  margin-inline: auto;
+  padding: 40px;
+  border-radius: 50%;
+  margin-block-end: 40px;
+  overflow: hidden;
+  transition: var(--transition-1);
+  z-index: 1;
+}
+
+.service-card .card-icon::before,
+.service-card .card-icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  transition: var(--transition-1);
+  z-index: -1;
+}
+
+.service-card .card-icon::before {
+  background-color: var(--blue-green-color-wheel);
+  transform: translateY(120px);
+}
+
+.service-card .card-icon::after {
+  background-color: var(--orange-web);
+  transform: translateY(150px);
+}
+
+.service-card:is(:hover, :focus-within, .active) .card-icon::before {
+  transform: translateY(0);
+}
+
+.service-card:is(:hover, :focus-within, .active) .card-icon::after {
+  transform: translateY(120px);
+}
+
+.service-card .card-icon img {
+  transition: var(--transition-1);
+}
+
+.service-card:is(:hover, :focus-within, .active) .card-icon img {
+  filter: grayscale(1) brightness(0) invert(1);
+}
+
+.service-card .h3 {
+  --fs-4: 2.4rem;
+}
+
+.service-card .card-title {
+  transition: var(--transition-1);
+}
+
+.service-card .card-title:is(:hover, :focus) {
+  color: var(--orange-web);
+}
+
+.service-card .card-text {
+  font-size: var(--fs-5);
+  margin-block: 20px 35px;
+}
+
+.service-card .btn {
+  margin-inline: auto;
+  font-size: 18px;
+  padding: 0;
+  max-width: 60px;
+  height: 60px;
+  display: grid;
+  place-content: center;
+}
+
+@media screen and (max-width: 768px){
+  
+}

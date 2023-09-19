@@ -1,0 +1,76 @@
+.blog {
+    background-color: var(--cultured);
+}
+
+.blog-card {
+    background-color: var(--white);
+    min-height: 420px;
+    padding: 20px;
+    display: grid;
+    align-content: center;
+    transition: var(--transition-2);
+}
+
+.blog-card:is(:hover, :focus-within) {
+    --hover-color: var(--white);
+    background-color: var(--blue-green-color-wheel);
+    color: var(--white);
+}
+
+.blog-card .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.blog-card .publish-date {
+    background-color: var(--hover-color, var(--blue-green-color-wheel));
+    color: var(--white);
+    font-size: var(--fs-7);
+    font-weight: var(--fw-500);
+    line-height: 1;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    display: grid;
+    place-content: center;
+    border-radius: var(--radius-2);
+    transition: var(--transition-2);
+}
+
+.blog-card:is(:hover, :focus-within) .publish-date {
+    color: var(--blue-green-color-wheel);
+}
+
+.blog-card .publish-date .span {
+    color: var(--orange-web);
+    font-size: var(--fs-3);
+    font-weight: var(--fw-700);
+    line-height: 1;
+    margin-block-end: 5px;
+}
+
+.blog-card .card-link {
+    font-weight: var(--fw-700);
+    margin-block-end: 10px;
+}
+
+.blog-card:is(:hover, :focus-within) .card-link {
+    color: var(--orange-web);
+}
+
+.blog-card .card-meta-item:not(:last-child)::after {
+    background-color: var(--hover-color, var(--black-chocolate));
+    transition: var(--transition-2);
+}
+
+.blog-card .card-title {
+    color: var(--hover-color);
+    margin-block: 30px 15px;
+    transition: var(--transition-2);
+}
+
+.blog-card .card-text {
+    font-size: var(--fs-5);
+}
