@@ -4,9 +4,9 @@
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
+    "react-awesome-reveal": "^4.2.5",
     "react-dom": "^18.2.0",
     "react-ionicons": "^4.2.1",
-    "react-reveal": "^1.2.2",
     "react-scripts": "0.9.5",
     "styled-components": "^6.0.8"
   },
@@ -14,7 +14,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "install": "npm install --legacy-peer-deps"
+    "eject": "react-scripts eject"
   }
 }
