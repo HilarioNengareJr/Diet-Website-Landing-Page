@@ -20,11 +20,7 @@ This project is a landing page for a diet website developed using ReactJS and CS
 
 To run the project locally, follow these steps:
 
-1. Clone the repository to your local machine:
-
-    ```bash
-    git clone https://github.com/your-username/diet-website.git
-    ```
+1. Clone the repository to your local machine
 
 2. Navigate to the project directory:
 
